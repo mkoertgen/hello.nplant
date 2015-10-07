@@ -31,7 +31,7 @@ namespace Hello.NPlant
 
             public FindContext(string fileName)
             {
-                if (string.IsNullOrWhiteSpace(fileName)) throw new ArgumentNullException("fileName");
+                if (string.IsNullOrWhiteSpace(fileName)) throw new ArgumentNullException(nameof(fileName));
                 _fileName = fileName;
             }
 

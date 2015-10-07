@@ -21,4 +21,7 @@
   <Target Name="Deploy">
     <MSBuild Projects="@(ProjectReference)" Targets="Deploy" BuildInParallel="True" Properties="$(Props)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
   </Target>
+  <Target Name="Docs">
+    <MSBuild Projects="@(ProjectReference)" Targets="Docs" BuildInParallel="True" Properties="$(Props)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
 </Project>

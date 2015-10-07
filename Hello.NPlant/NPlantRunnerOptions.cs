@@ -35,9 +35,17 @@ namespace Hello.NPlant
             var safeAssembly = assembly ?? typeof (NPlantRunnerOptions).Assembly;
             var assemblyFile = safeAssembly.GetPath();
             AssemblyToScan = assemblyFile;
-            OutputDirectory = Path.GetDirectoryName(assemblyFile);
+            OutputDirectory = FindOutputDir();
             JavaPath = FindJava();
             PlantUml = FindPlantUml();
+        }
+
+        private static string FindOutputDir()
+        {
+            //return Path.GetDirectoryName(assemblyFile);
+            var solutionDir = Path.Combine(Environment.CurrentDirectory, @"..\..\..");
+            var docsImgDir = Path.Combine(solutionDir, @"docs\img");
+            return docsImgDir;
         }
 
         private static string FindJava()

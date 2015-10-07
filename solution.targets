@@ -6,7 +6,10 @@
 			<Link>Properties\SolutionInfo.cs</Link>
 		</Compile>
 	</ItemGroup>
-	
+
+	<Target Name="Docs" DependsOnTargets="Test">
+		<Exec Command="mkdocs build" WorkingDirectory="$(SolutionDir)"/>
+	</Target>
 
 	<!-- ## Uncomment to customize targets to customize test ##
 	<Target Name="Test" DependsOnTargets="TestWithNUnit"/>

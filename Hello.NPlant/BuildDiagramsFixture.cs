@@ -5,7 +5,7 @@ namespace Hello.NPlant
 {
     [TestFixture]
     // ReSharper disable InconsistentNaming
-    class Diagrams
+    class BuildDiagramsFixture
     {
         [Test]
         public void Create_SampleDiagrams()

@@ -8,4 +8,5 @@
   <Target Name="CoverageReport" DependsOnTargets="Coverage" />
   <Target Name="Package" DependsOnTargets="Build" />
   <Target Name="Deploy" DependsOnTargets="Build" />
+  <Target Name="Docs" DependsOnTargets="Build" />
  </Project>
