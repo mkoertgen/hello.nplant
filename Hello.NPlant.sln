@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello.NPlant", "Hello.NPlan
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD3E7785-1956-4B2F-977A-28357C9975BD}"
 	ProjectSection(SolutionItems) = preProject
+		before.Hello.NPlant.sln.targets = before.Hello.NPlant.sln.targets
+		build.bat = build.bat
+		empty.targets = empty.targets
+		mkdocs.yml = mkdocs.yml
 		ReadMe.md = ReadMe.md
 		solution.targets = solution.targets
 		SolutionInfo.cs = SolutionInfo.cs
