@@ -7,12 +7,12 @@ An example on how to use [NPlant](https://github.com/nplant/nplant) & [mkdocs](h
 You will need
 
   - [plantuml](http://plantuml.sourceforge.net/), install by 
-      
-	    choco install plantuml
+	  
+		choco install plantuml
 
   - [mkdocs](http://www.mkdocs.org/), install by 
   
-        choco install python
+		choco install python
 		pip install mkdocs
 
 ## Build documentation
