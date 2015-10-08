@@ -9,7 +9,7 @@
 
 	<Target Name="Docs" DependsOnTargets="Test">
 		<Message Text="Generating UI sketches..." Importance="High"/>
-		<Exec Command="planutml -o img ./docs/**.md" WorkingDirectory="$(SolutionDir)"/>
+		<Exec Command="plantuml -o img ./docs/**.md" WorkingDirectory="$(SolutionDir)"/>
 
 		<Exec Command="mkdocs build" WorkingDirectory="$(SolutionDir)"/>
 	</Target>
