@@ -11,7 +11,8 @@
 		<Message Text="Generating UI sketches..." Importance="High"/>
 		<Exec Command="plantuml -o img ./docs/**.md" WorkingDirectory="$(SolutionDir)"/>
 
-		<Exec Command="mkdocs build" WorkingDirectory="$(SolutionDir)"/>
+		<Message Text="Building documentation..." Importance="High"/>
+		<Exec Command="mkdocs build --clean" WorkingDirectory="$(SolutionDir)"/>
 	</Target>
 
 	<!-- ## Uncomment to customize targets to customize test ##
