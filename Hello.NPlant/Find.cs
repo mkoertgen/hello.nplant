@@ -50,6 +50,20 @@ namespace Hello.NPlant
                 return null;
             }
 
+            public string Above(string directory)
+            {
+                var files = Directory.GetFiles(directory, _fileName);
+                if (files.Any())
+                    return files.FirstOrDefault();
+
+                var dir = new DirectoryInfo(directory);
+                var parent = dir.Parent;
+                if (parent != null)
+                    return Above(parent.FullName);
+
+                return null;
+            }
+
             public string BeneathEnv(string envVar)
             {
                 var path = Environment.GetEnvironmentVariable(envVar);

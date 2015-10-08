@@ -42,9 +42,10 @@ namespace Hello.NPlant
 
         private static string FindOutputDir()
         {
-            //return Path.GetDirectoryName(assemblyFile);
-            var solutionDir = Path.Combine(Environment.CurrentDirectory, @"..\..\..");
-            var docsImgDir = Path.Combine(solutionDir, @"docs\img");
+            var outputDir = Environment.CurrentDirectory;
+            var mkdocsFile = Find.File("mkdocs.yml").Above(outputDir);
+            var mkdocsDir = Path.GetDirectoryName(mkdocsFile);
+            var docsImgDir = Path.Combine(mkdocsDir, @"docs\img");
             return docsImgDir;
         }
 
