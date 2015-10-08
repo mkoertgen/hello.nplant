@@ -157,3 +157,4 @@ $RECYCLE.BIN/
 # mkdocs generated files
 site/*
 docs/img/
+.vs/
