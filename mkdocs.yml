@@ -6,6 +6,8 @@ pages:
 - Home: index.md
 - Usage: usage.md
 - Configuration: configuration.md
-- Examples: examples.md
+- Examples:
+    - 'Architectural Diagrams with NPlant': examples_nplant.md
+    - 'UI Sketches with Salt': examples_salt_ui.md
 - FAQ: faq.md
 - Why?: why.md

@@ -19,11 +19,11 @@ You will need
 
 Build the documentation & diagrams using
 
-    build.bat /t:Docs /v:m
+	build.bat /t:Docs /v:m
 
 The documentation is built into the `\site` subdirectory. You can view it
 
-    mkdocs serve
-    start http://localhost:8000
+	mkdocs serve
+	start http://localhost:8000
    
 Note that changes in the markdown documentation files within `\docs` are automatically tracked by `mkdocs` rebuilding & refreshing the served documentation.
