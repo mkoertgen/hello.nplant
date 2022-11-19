@@ -16,7 +16,6 @@ public class SimplePackageDiagram : ClassDiagram
 
         AddPackage("Package B")
             .IncludeClassesWhere(descriptor => descriptor.ReflectedType == typeof(Baz));
-
     }
 
     public class Foo
@@ -28,7 +27,6 @@ public class SimplePackageDiagram : ClassDiagram
     public class Bar : Foo
     {
         public DateTime? SomeDate;
-
     }
 
     public class Baz

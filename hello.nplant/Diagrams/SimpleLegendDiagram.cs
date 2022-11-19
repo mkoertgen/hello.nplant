@@ -13,6 +13,11 @@ public class SimpleLegendDiagram : ClassDiagram
             .DisplayLeft();
     }
 
-    public class Foo { }
-    public class Bar { }
+    public class Foo
+    {
+    }
+
+    public class Bar
+    {
+    }
 }

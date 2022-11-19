@@ -22,9 +22,8 @@ internal class MkDocs
         return mkdocs;
     }
 
-    [YamlIgnore]
-    public string? FileLocation { get; private set; }
-    
+    [YamlIgnore] public string? FileLocation { get; private set; }
+
     public string? SiteName { get; set; }
     public string? RepoUrl { get; set; }
     public string DocsDir { get; set; } = "docs";

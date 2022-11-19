@@ -85,6 +85,7 @@ internal static class Find
                 if (files.Any())
                     return files.FirstOrDefault();
             }
+
             return null;
         }
     }

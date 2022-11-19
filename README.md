@@ -2,10 +2,12 @@
 
 # hello.nplant
 
-An example on _Continuous Documentation_ - introducing a feedback loop for documentation as part of your build. This example shows how you can generate
+An example on _Continuous Documentation_ - introducing a feedback loop for documentation as part of your build. This
+example shows how you can generate
 
 - full blown documentation using [mkdocs](http://www.mkdocs.org/)
-- architectural documentation that lives with your code using [NPlant](https://github.com/nplant/nplant) & [plantuml](http://plantuml.com/)
+- architectural documentation that lives with your code using [NPlant](https://github.com/nplant/nplant)
+  & [plantuml](http://plantuml.com/)
 - UI sketches & prototypes for use cases with [Salt](http://plantuml.com/salt.html)
 
 ## Install
@@ -40,4 +42,5 @@ python -m mkdocs serve
 ```
 
 and browse to [http://localhost:8000](http://localhost:8000).
-Note that changes in the markdown documentation files within `\docs` are automatically tracked by `mkdocs` rebuilding & refreshing the served documentation.
+Note that changes in the markdown documentation files within `\docs` are automatically tracked by `mkdocs` rebuilding &
+refreshing the served documentation.

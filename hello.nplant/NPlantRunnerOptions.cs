@@ -4,7 +4,7 @@ using NPlant.Generation;
 
 namespace Hello.NPlant;
 
-class NPlantRunnerOptions : INPlantRunnerOptions
+internal class NPlantRunnerOptions : INPlantRunnerOptions
 {
     static NPlantRunnerOptions()
     {
@@ -30,7 +30,7 @@ class NPlantRunnerOptions : INPlantRunnerOptions
 
     public NPlantRunnerOptions(Assembly? assembly = null)
     {
-        var safeAssembly = assembly ?? typeof (NPlantRunnerOptions).Assembly;
+        var safeAssembly = assembly ?? typeof(NPlantRunnerOptions).Assembly;
         var assemblyFile = safeAssembly.GetPath();
         AssemblyToScan = assemblyFile;
         OutputDirectory = FindOutputDir();

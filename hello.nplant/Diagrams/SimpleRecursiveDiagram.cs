@@ -20,7 +20,6 @@ public class SimpleRecursiveDiagram : ClassDiagram
     public class Bar
     {
         public DateTime? SomeDate;
-
     }
 
     public class Baz

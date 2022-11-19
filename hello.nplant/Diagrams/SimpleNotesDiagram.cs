@@ -17,6 +17,12 @@ public class SimpleNotesDiagram : ClassDiagram
             .ConnectedToClass<Foo>()
             .ConnectedToClass<Bar>();
     }
-    public class Foo { }
-    public class Bar { }
+
+    public class Foo
+    {
+    }
+
+    public class Bar
+    {
+    }
 }

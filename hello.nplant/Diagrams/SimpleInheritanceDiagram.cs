@@ -24,7 +24,6 @@ public class SimpleInheritanceDiagram : ClassDiagram
     public class Bar : Foo
     {
         public DateTime? SomeDate;
-
     }
 
     public class Baz
