@@ -15,5 +15,3 @@ TODO..
 TODO..
 
 Available on [Nuget](https://www.nuget.org) under [NPlant.API](https://www.nuget.org/packages/NPlant.API/)
-
-    Install-Package NPlant.API

@@ -3,5 +3,6 @@
 TODO..
 
 ## Advantages vs other approaches
- - TODO
- - TODO
+
+- TODO
+- TODO
