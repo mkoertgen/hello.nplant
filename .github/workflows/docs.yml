@@ -13,9 +13,13 @@ jobs:
   publish:
     runs-on: windows-latest
     steps:
+      - name: "install: plantuml" # https://github.com/majkinetor/au-packages/tree/master/plantuml
+        run: |
+          choco install graphviz plantuml
       - uses: actions/checkout@v3
       - name: "dotnet: build"
-        run: dotnet run --project hello.nplant/hello.nplant.csproj
+        run: |
+          dotnet run --project hello.nplant/hello.nplant.csproj
       - name: "mkdocs: gh-deploy" #  # https://www.mkdocs.org/user-guide/deploying-your-docs/#github-pages
         run: |
           pip install --user -r requirements.txt
