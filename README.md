@@ -1,24 +1,26 @@
-# Hello.NPlant
+[![docs](https://github.com/mkoertgen/hello.nplant/actions/workflows/docs.yml/badge.svg)](https://mkoertgen.github.io/hello.nplant/)
 
-An example on *Continuous Documentation* - introducing a feedback loop for documentation as part of your build. This example shows how you can generate
+# hello.nplant
 
-- full blown documentation using [mkdocs](http://www.mkdocs.org/) 
+An example on _Continuous Documentation_ - introducing a feedback loop for documentation as part of your build. This example shows how you can generate
+
+- full blown documentation using [mkdocs](http://www.mkdocs.org/)
 - architectural documentation that lives with your code using [NPlant](https://github.com/nplant/nplant) & [plantuml](http://plantuml.com/)
-- UI sketches & prototypes for use cases with [Salt](http://plantuml.com/salt.html) 
+- UI sketches & prototypes for use cases with [Salt](http://plantuml.com/salt.html)
 
-## Install 
+## Install
 
 You will need
 
-- [plantuml](http://plantuml.sourceforge.net/), install by 
-	  
+- [plantuml](http://plantuml.sourceforge.net/), install by
+
 ```shell
 choco install plantuml
 ```
 
-- [mkdocs](http://www.mkdocs.org/), install by 
-  
-```shell      
+- [mkdocs](http://www.mkdocs.org/), install by
+
+```shell
 choco install python -y
 pip install --user -r requirements.txt
 ```
@@ -37,5 +39,5 @@ The documentation is built into the `\site` subdirectory. Best way to view is
 python -m mkdocs serve
 ```
 
-and browse to [http://localhost:8000](http://localhost:8000). 
+and browse to [http://localhost:8000](http://localhost:8000).
 Note that changes in the markdown documentation files within `\docs` are automatically tracked by `mkdocs` rebuilding & refreshing the served documentation.
