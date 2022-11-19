@@ -23,4 +23,4 @@ jobs:
       - name: "mkdocs: gh-deploy" #  # https://www.mkdocs.org/user-guide/deploying-your-docs/#github-pages
         run: |
           pip install --user -r requirements.txt
-          python -m mkdocs gh-deploy
+          python -m mkdocs gh-deploy --force
